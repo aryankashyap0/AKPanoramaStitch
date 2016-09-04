@@ -15,6 +15,11 @@
 		92DE5C231D7CBEDF003F0C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DE5C211D7CBEDF003F0C2C /* LaunchScreen.storyboard */; };
 		92DE5C2E1D7CBEDF003F0C2C /* AKPanoramaStitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5C2D1D7CBEDF003F0C2C /* AKPanoramaStitchTests.m */; };
 		92DE5C391D7CBEDF003F0C2C /* AKPanoramaStitchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5C381D7CBEDF003F0C2C /* AKPanoramaStitchUITests.m */; };
+		92DE5C481D7CBEF9003F0C2C /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5C471D7CBEF9003F0C2C /* UIImage+Rotate.m */; };
+		92DE5C4D1D7CC2A2003F0C2C /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5C4C1D7CC2A2003F0C2C /* UIImage+OpenCV.mm */; };
+		92DE5C701D7CC472003F0C2C /* stitching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5C6E1D7CC472003F0C2C /* stitching.cpp */; };
+		92DE5C721D7CC4BC003F0C2C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DE5C711D7CC4BC003F0C2C /* opencv2.framework */; };
+		92DE5C751D7CCAAB003F0C2C /* AKCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5C741D7CCAAB003F0C2C /* AKCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		92DE5C341D7CBEDF003F0C2C /* AKPanoramaStitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKPanoramaStitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DE5C381D7CBEDF003F0C2C /* AKPanoramaStitchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKPanoramaStitchUITests.m; sourceTree = "<group>"; };
 		92DE5C3A1D7CBEDF003F0C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DE5C461D7CBEF9003F0C2C /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		92DE5C471D7CBEF9003F0C2C /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		92DE5C4B1D7CC2A2003F0C2C /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		92DE5C4C1D7CC2A2003F0C2C /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		92DE5C6E1D7CC472003F0C2C /* stitching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stitching.cpp; sourceTree = "<group>"; };
+		92DE5C6F1D7CC472003F0C2C /* stitching.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stitching.hpp; sourceTree = "<group>"; };
+		92DE5C711D7CC4BC003F0C2C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		92DE5C731D7CCAAB003F0C2C /* AKCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKCVWrapper.h; sourceTree = "<group>"; };
+		92DE5C741D7CCAAB003F0C2C /* AKCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AKCVWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DE5C721D7CC4BC003F0C2C /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 		92DE5C071D7CBEDF003F0C2C = {
 			isa = PBXGroup;
 			children = (
+				92DE5C711D7CC4BC003F0C2C /* opencv2.framework */,
 				92DE5C121D7CBEDF003F0C2C /* AKPanoramaStitch */,
 				92DE5C2C1D7CBEDF003F0C2C /* AKPanoramaStitchTests */,
 				92DE5C371D7CBEDF003F0C2C /* AKPanoramaStitchUITests */,
@@ -105,6 +121,14 @@
 				92DE5C171D7CBEDF003F0C2C /* AppDelegate.m */,
 				92DE5C191D7CBEDF003F0C2C /* ViewController.h */,
 				92DE5C1A1D7CBEDF003F0C2C /* ViewController.m */,
+				92DE5C731D7CCAAB003F0C2C /* AKCVWrapper.h */,
+				92DE5C741D7CCAAB003F0C2C /* AKCVWrapper.mm */,
+				92DE5C4B1D7CC2A2003F0C2C /* UIImage+OpenCV.h */,
+				92DE5C4C1D7CC2A2003F0C2C /* UIImage+OpenCV.mm */,
+				92DE5C461D7CBEF9003F0C2C /* UIImage+Rotate.h */,
+				92DE5C471D7CBEF9003F0C2C /* UIImage+Rotate.m */,
+				92DE5C6E1D7CC472003F0C2C /* stitching.cpp */,
+				92DE5C6F1D7CC472003F0C2C /* stitching.hpp */,
 				92DE5C1C1D7CBEDF003F0C2C /* Main.storyboard */,
 				92DE5C1F1D7CBEDF003F0C2C /* Assets.xcassets */,
 				92DE5C211D7CBEDF003F0C2C /* LaunchScreen.storyboard */,
@@ -271,8 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DE5C1B1D7CBEDF003F0C2C /* ViewController.m in Sources */,
+				92DE5C4D1D7CC2A2003F0C2C /* UIImage+OpenCV.mm in Sources */,
 				92DE5C181D7CBEDF003F0C2C /* AppDelegate.m in Sources */,
+				92DE5C751D7CCAAB003F0C2C /* AKCVWrapper.mm in Sources */,
+				92DE5C481D7CBEF9003F0C2C /* UIImage+Rotate.m in Sources */,
 				92DE5C151D7CBEDF003F0C2C /* main.m in Sources */,
+				92DE5C701D7CC472003F0C2C /* stitching.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,8 +441,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AKPanoramaStitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.13/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = aryan.hazeley.AKPanoramaStitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,8 +460,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AKPanoramaStitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.13/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = aryan.hazeley.AKPanoramaStitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

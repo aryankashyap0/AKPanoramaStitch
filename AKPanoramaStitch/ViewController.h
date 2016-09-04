@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIImageView* imageView;
+@property (nonatomic, weak) IBOutlet UIScrollView* scrollView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
 
 @end
 
