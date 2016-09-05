@@ -22,7 +22,7 @@ using namespace cv;
     return result;
 }
 
-+(UIImage *)ak_processWithOpenCVImage1:(UIImage *)inputImage1 image2:(UIImage *)inputImage2
++ (UIImage *)ak_processWithOpenCVImage1:(UIImage *)inputImage1 image2:(UIImage *)inputImage2
 {
     NSArray* imageArray = [NSArray arrayWithObjects:inputImage1,inputImage2,nil];
     UIImage* result = [[self class] ak_processWithArray:imageArray];

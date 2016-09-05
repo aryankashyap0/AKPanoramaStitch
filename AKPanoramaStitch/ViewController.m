@@ -27,7 +27,7 @@
    [self.spinner startAnimating];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        
+        // Array for images
         NSArray* imageArray = [NSArray arrayWithObjects:
                                [UIImage imageNamed:@"1"],
                                [UIImage imageNamed:@"2"],
