@@ -93,6 +93,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		921B8FA01D7D7905000BDAE4 /* UIImage Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92DE5C4B1D7CC2A2003F0C2C /* UIImage+OpenCV.h */,
+				92DE5C4C1D7CC2A2003F0C2C /* UIImage+OpenCV.mm */,
+				92DE5C461D7CBEF9003F0C2C /* UIImage+Rotate.h */,
+				92DE5C471D7CBEF9003F0C2C /* UIImage+Rotate.m */,
+			);
+			name = "UIImage Extensions";
+			sourceTree = "<group>";
+		};
+		921B8FA11D7D7912000BDAE4 /* C++ stitching */ = {
+			isa = PBXGroup;
+			children = (
+				92DE5C6E1D7CC472003F0C2C /* stitching.cpp */,
+				92DE5C6F1D7CC472003F0C2C /* stitching.hpp */,
+			);
+			name = "C++ stitching";
+			sourceTree = "<group>";
+		};
+		921B8FA21D7D7921000BDAE4 /* OpenCV Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				92DE5C731D7CCAAB003F0C2C /* AKCVWrapper.h */,
+				92DE5C741D7CCAAB003F0C2C /* AKCVWrapper.mm */,
+			);
+			name = "OpenCV Wrapper";
+			sourceTree = "<group>";
+		};
 		92DE5C071D7CBEDF003F0C2C = {
 			isa = PBXGroup;
 			children = (
@@ -121,14 +150,9 @@
 				92DE5C171D7CBEDF003F0C2C /* AppDelegate.m */,
 				92DE5C191D7CBEDF003F0C2C /* ViewController.h */,
 				92DE5C1A1D7CBEDF003F0C2C /* ViewController.m */,
-				92DE5C731D7CCAAB003F0C2C /* AKCVWrapper.h */,
-				92DE5C741D7CCAAB003F0C2C /* AKCVWrapper.mm */,
-				92DE5C4B1D7CC2A2003F0C2C /* UIImage+OpenCV.h */,
-				92DE5C4C1D7CC2A2003F0C2C /* UIImage+OpenCV.mm */,
-				92DE5C461D7CBEF9003F0C2C /* UIImage+Rotate.h */,
-				92DE5C471D7CBEF9003F0C2C /* UIImage+Rotate.m */,
-				92DE5C6E1D7CC472003F0C2C /* stitching.cpp */,
-				92DE5C6F1D7CC472003F0C2C /* stitching.hpp */,
+				921B8FA21D7D7921000BDAE4 /* OpenCV Wrapper */,
+				921B8FA11D7D7912000BDAE4 /* C++ stitching */,
+				921B8FA01D7D7905000BDAE4 /* UIImage Extensions */,
 				92DE5C1C1D7CBEDF003F0C2C /* Main.storyboard */,
 				92DE5C1F1D7CBEDF003F0C2C /* Assets.xcassets */,
 				92DE5C211D7CBEDF003F0C2C /* LaunchScreen.storyboard */,
@@ -540,6 +564,7 @@
 				92DE5C3F1D7CBEDF003F0C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DE5C401D7CBEDF003F0C2C /* Build configuration list for PBXNativeTarget "AKPanoramaStitchTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +573,7 @@
 				92DE5C421D7CBEDF003F0C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DE5C431D7CBEDF003F0C2C /* Build configuration list for PBXNativeTarget "AKPanoramaStitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +582,7 @@
 				92DE5C451D7CBEDF003F0C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
