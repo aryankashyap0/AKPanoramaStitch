@@ -11,7 +11,7 @@
 #ifndef stitching_hpp
 #define stitching_hpp
 
-cv::Mat stitch (cv::vector <cv::Mat> & images);
+cv::Mat stitch (std::vector <cv::Mat> & images);
 
 
 #endif /* stitching_hpp */
